@@ -3,24 +3,24 @@ package it.polito.tdp.libretto.model;
 import java.time.LocalDate;
 
 /**
- * Classe Voto, contiene le informazioni su un esame
- * superato.
+ * Classe Voto, contiene le informazioni su un esame superato.
  * 
  * @author Fulvio
  *
  */
 public class Voto {
-	
-	private String corso ; // "Tecniche di Programmazione"
-	private int voto ; // 28
-	private LocalDate data ; // 15/06/2020
+
+	private String corso; // "Tecniche di Programmazione"
+	private int voto; // 28
+	private LocalDate data; // 15/06/2020
+	//non usare Date come classe.
 	
 	/**
 	 * Costruisce un nuovo Voto.
 	 * 
 	 * @param corso nome del corso superato
-	 * @param voto valore del voto acquisito
-	 * @param data data di superamento dell'esame
+	 * @param voto  valore del voto acquisito
+	 * @param data  data di superamento dell'esame
 	 */
 	public Voto(String corso, int voto, LocalDate data) {
 		super();
@@ -57,9 +57,5 @@ public class Voto {
 	public String toString() {
 		return corso + ": " + voto + " (" + data + ")";
 	}
-	
-	
-	
-	
 
 }

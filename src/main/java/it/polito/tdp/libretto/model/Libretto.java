@@ -12,7 +12,11 @@ import java.util.List;
 public class Libretto {
 
 	private List<Voto> voti = new ArrayList<>();
-
+	
+	/*
+	public Libretto() {
+		this.voti = new ArrayList<Voto>();
+	}*/
 	/**
 	 * Aggiunge un nuovo voto al libretto
 	 * 
@@ -39,6 +43,7 @@ public class Libretto {
 		return s;
 	}
 	
+	//MEGLIO LAVORARE CON OGGETTI CHE CON STRINGHE!
 	/**
 	 * Genera un nuovo libretto, a partire da quello esistente,
 	 * che conterrà esclusivamenti i voti con votazione pari a quella specificata.
